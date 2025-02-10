@@ -44,7 +44,7 @@ export default function MainPage() {
 		>
 			{isMobile && (loading ? <LinearProgress /> : statsBar)}
 
-			{/* <div
+			<div
 				style={{
 					display: 'flex',
 					flexDirection: 'column',
@@ -53,7 +53,7 @@ export default function MainPage() {
 					margin: isMobile ? '0' : '0 auto',
 				}}
 			>
-				<Typography
+				{/* <Typography
 					variant='main_head'
 					style={{
 						marginBottom: isMobile ? '0' : '-12%',
@@ -62,13 +62,13 @@ export default function MainPage() {
 					}}
 				>
 					We are 3000+
-				</Typography>
+				</Typography> */}
 				<Image
 					src={main.src}
 					width={isMobile ? 245 : 672}
 					height={isMobile ? 175 : 482}
 				/>
-				<div
+				{/* <div
 					style={{
 						display: 'flex',
 						flexDirection: 'column',
@@ -84,8 +84,8 @@ export default function MainPage() {
 					<Typography variant='main_bottom' component={'h6'}>
 						For everyone
 					</Typography>
-				</div>
-			</div> */}
+				</div> */}
+			</div>
 		</div>
 	)
 }
