@@ -53,7 +53,7 @@ export default function RegisterComponent() {
 		password: '#8C7F77',
 		confirmPassword: '#8C7F77',
 	})
-	const [captchaValue, setCaptchaValue] = useState(true)
+	const [captchaValue, setCaptchaValue] = useState(null)
 
 	const [telegram, setTelegram] = useState(null)
 	const [countryCode, setCountryCode] = useState('+1')
@@ -192,7 +192,6 @@ export default function RegisterComponent() {
 	const isMobile = useMediaQuery('@media(max-width:1300px)')
 	const showRegistration = true
 	return (
-		<>
 			<Box
 				style={{
 					width: '75%',
@@ -559,12 +558,12 @@ export default function RegisterComponent() {
 								}}
 							>
 								<div style={{ transform: 'scale(0.8)' }}>
-									{/* <ReCAPTCHA
+									<ReCAPTCHA
 										sitekey={captchaKey}
 										theme='light'
 										size='normal'
 										onChange={handleCaptchaChange}
-									/> */}
+									/>
 								</div>
 							</Grid>
 
@@ -640,6 +639,5 @@ export default function RegisterComponent() {
 					</div>
 				)}
 			</Box>
-		</>
 	)
 }

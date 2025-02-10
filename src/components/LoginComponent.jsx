@@ -25,7 +25,7 @@ import Link from 'next/link'
 export default function LoginComponent() {
 	const captchaKey = process.env.CAPTCHA_KEY
 	const { login, loading, error, success } = useLogin()
-	const [captchaValue, setCaptchaValue] = useState(true)
+	const [captchaValue, setCaptchaValue] = useState(null)
 	const [err, setError] = useState(null)
 	const handleCaptchaChange = value => {
 		setCaptchaValue(value)
@@ -173,12 +173,12 @@ export default function LoginComponent() {
 						}}
 					>
 						<div style={{ transform: 'scale(0.8)' }}>
-							{/* <ReCAPTCHA
+							<ReCAPTCHA
 								sitekey={captchaKey}
 								theme='light'
 								size='normal'
 								onChange={handleCaptchaChange}
-							/> */}
+							/>
 						</div>
 					</Grid>
 

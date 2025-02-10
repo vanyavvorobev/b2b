@@ -44,7 +44,7 @@ export default function MainPage() {
 		>
 			{isMobile && (loading ? <LinearProgress /> : statsBar)}
 
-			<div
+			{/* <div
 				style={{
 					display: 'flex',
 					flexDirection: 'column',
@@ -85,7 +85,7 @@ export default function MainPage() {
 						For everyone
 					</Typography>
 				</div>
-			</div>
+			</div> */}
 		</div>
 	)
 }
