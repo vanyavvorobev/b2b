@@ -25,7 +25,7 @@ import Link from 'next/link'
 export default function LoginComponent() {
 	const captchaKey = process.env.CAPTCHA_KEY
 	const { login, loading, error, success } = useLogin()
-	const [captchaValue, setCaptchaValue] = useState(true)
+	const [captchaValue, setCaptchaValue] = useState(false)
 	const [err, setError] = useState(null)
 	const handleCaptchaChange = value => {
 		setCaptchaValue(value)
