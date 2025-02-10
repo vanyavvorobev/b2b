@@ -350,7 +350,7 @@ export default function RegisterComponent() {
 										onChange={handleCountryCodeChange}
 									>
 										{countryCodes.map((code, index) => (
-											<MenuItem value={code.dial_code} key={index}>
+											<MenuItem value={code.dial_code} key={index} style={{color: "black"}}>
 												{code.code} {code.dial_code}
 											</MenuItem>
 										))}
@@ -393,7 +393,7 @@ export default function RegisterComponent() {
 								</InputLabel>
 								<Select label='Your Country' id='country-select' name='country'>
 									{countryList.map(country => (
-										<MenuItem key={country.code} value={country.name}>
+										<MenuItem key={country.code} value={country.name} style={{color: "black"}}>
 											{country.name}
 										</MenuItem>
 									))}
@@ -623,15 +623,15 @@ export default function RegisterComponent() {
 						(закольцовку), регистрации в проекте прекращены!
 					</p>
 				)}
-				{validationErrors.captcha && <div>{validationErrors.captcha}</div>}
-				{validationErrors.birth && <div>{validationErrors.birth}</div>}
-				{validationErrors.phone && <div>{validationErrors.phone}</div>}
-				{validationErrors.firstName && <div>{validationErrors.firstName}</div>}
-				{validationErrors.telegram && <div>{validationErrors.telegram}</div>}
-				{validationErrors.lastName && <div>{validationErrors.lastName}</div>}
-				{validationErrors.nickname && <div>{validationErrors.nickname}</div>}
-				{validationErrors.password && <div>{validationErrors.password}</div>}
-				{validationErrors.checkbox && <div>{validationErrors.checkbox}</div>}
+				{validationErrors.captcha && <div style={{color: "white"}}>{validationErrors.captcha}</div>}
+				{validationErrors.birth && <div style={{color: "white"}}>{validationErrors.birth}</div>}
+				{validationErrors.phone && <div style={{color: "white"}}>{validationErrors.phone}</div>}
+				{validationErrors.firstName && <div style={{color: "white"}}>{validationErrors.firstName}</div>}
+				{validationErrors.telegram && <div style={{color: "white"}}>{validationErrors.telegram}</div>}
+				{validationErrors.lastName && <div style={{color: "white"}}>{validationErrors.lastName}</div>}
+				{validationErrors.nickname && <div style={{color: "white"}}>{validationErrors.nickname}</div>}
+				{validationErrors.password && <div style={{color: "white"}}>{validationErrors.password}</div>}
+				{validationErrors.checkbox && <div style={{color: "white"}}>{validationErrors.checkbox}</div>}
 				{error && <div>{error}</div>}
 				{success && (
 					<div>

@@ -21,7 +21,7 @@ export default function CellBox({ isActive, data, showQueue = false }) {
 				className='ScrollbarOrange'
 				style={{
 					background: '#fff4',
-					height: '150px',
+					height: '100px',
 					width: '100%',
 					minWidth: 150,
 					overflowY: 'auto',

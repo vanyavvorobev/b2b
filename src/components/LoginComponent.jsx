@@ -226,7 +226,7 @@ export default function LoginComponent() {
 					</Typography>
 				</Grid>
 			</form>
-			{(error || err) && <div>{error || err}</div>}
+			{(error || err) && <div style={{color: "white"}}>{error || err}</div>}
 			{success && <div>Successfully signed in!</div>}
 		</Box>
 	)

@@ -76,7 +76,7 @@ export default function DesktopOneCell({
 					style={{ layout: 'fill' }}
 				/> */}
 
-				{Number(router.query.cellLevelId) !== 3 && (
+				{Number(router.query.cellLevelId) < 2 && (
 					<JoinButton
 						variant='outlined'
 						disabled={disabled}

@@ -37,6 +37,7 @@ const Wrapper = ({ children, style, ...props }) => {
 
 	const styles = {
 		width: '100%',
+		backdropFilter: "blur(10px)",
 		height: isMobile ? '100%' : '80dvh',
 		maxHeight: isMobile ? 'unset' : '100%',
 		minHeight: isMobile ? 'unset' : '1200px',

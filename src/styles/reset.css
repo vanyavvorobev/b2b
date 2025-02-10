@@ -81,7 +81,7 @@ body {
 }
 
 .ScrollbarOrange::-webkit-scrollbar-track {
-	background: #e06b00;
+	background: #80f7ff;
 }
 
 .ScrollbarOrange::-webkit-scrollbar-thumb {
@@ -89,6 +89,6 @@ body {
 }
 
 .ScrollbarOrange {
-	scrollbar-color: #1b170f #e06b00;
+	scrollbar-color: #1b170f #80f7ff;
 }
 

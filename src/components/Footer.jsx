@@ -7,6 +7,7 @@ import useGetStats from '@/hooks/useGetStats'
 
 const FooterEl = styled('footer')(({ isMobile }) => ({
 	width: '100%',
+	backdropFilter: "blur(10px)",
 	minHeight: '80px',
 	marginBottom: '12px',
 	borderRadius: '20px',
