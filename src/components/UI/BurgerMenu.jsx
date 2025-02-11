@@ -60,10 +60,15 @@ export default function BurgerMenu({ loggedIn, toggleBurgerMenu, burgerOpen }) {
 	const statsBar = useMemo(() => <StatsBar stats={stats} />, [stats])
 
 	return (
-		<Drawer anchor='top' open={burgerOpen} onClose={toggleBurgerMenu}>
+		<Drawer sx={{
+			'& .MuiDrawer-paper': {
+			  backgroundColor: 'transparent',
+			},
+		}} anchor='top' open={burgerOpen} onClose={toggleBurgerMenu}>
 			<Box
 				style={{
-					backgroundColor: '#E06B00',
+					background: 'linear-gradient(90deg, #E06B0050, #C03AFF50, #80F7FF50)', // Градиент фона
+					backdropFilter: "blur(10px)",
 					display: 'flex',
 					flexDirection: 'column',
 					alignItems: 'center',
@@ -99,7 +104,6 @@ export default function BurgerMenu({ loggedIn, toggleBurgerMenu, burgerOpen }) {
 							flexDirection: 'column',
 							alignItems: 'center',
 							justifyContent: 'flex-start',
-							background: '#E06B00',
 						}}
 					>
 						{Object.keys(tabs).map((tab, index) => (

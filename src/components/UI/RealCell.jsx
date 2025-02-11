@@ -4,6 +4,8 @@ import cell from '@/assets/img/join_cell_bg.svg'
 
 export default function RealCell({ data }) {
 	const isMobile = useMediaQuery('@media(max-width: 1300px)')
+	console.log(data)
+	if(data.length === 0 || data.length > 3) return (null)
 	return (
 		<Box style={{ display: 'flex', flexDirection: 'row', width: '100%' }}>
 			<Grid
@@ -14,7 +16,7 @@ export default function RealCell({ data }) {
 					rowGap: 20,
 				}}
 			>
-				{data && data[0] && (
+				{ (
 					<Typography variant='level_dark' style={{ minWidth: 195 }}>
 						{data[0]?.cellLevel.level} {data[0]?.cellLevel.price}$
 					</Typography>

@@ -91,13 +91,13 @@ export default function MobileOneCell({
 					data={followerActiveData}
 					style={{ gridArea: 'follower' }}
 				/>
-				<DataBox
+				{/* <DataBox
 					title='waiting'
 					data={waitingData}
 					style={{ gridArea: 'waiting' }}
 					isNotClickable={true}
 					showQueue={true}
-				/>
+				/> */}
 				<DataBox
 					title='leader'
 					data={leaderActiveData}

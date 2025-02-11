@@ -7,7 +7,7 @@ import Wrapper from '../components/UI/Wrapper'
 const RealCell = dynamic(() => import('@/components/UI/RealCell'))
 import refresh from '@/assets/img/refresh_dark.svg'
 
-const numberOfLevels = 5
+const numberOfLevels = 3
 export default function RealCells() {
 	const { getCells, loading } = useCells()
 	const [data, setData] = useState(null)
@@ -18,7 +18,7 @@ export default function RealCells() {
 			const dataForLevel = await getCells('real_cells', { levelId: i })
 			tempData.push(dataForLevel?.data || [])
 		}
-		setData([tempData])
+		setData(tempData)
 	}
 	const onRefreshClick = () => {
 		setData(null)

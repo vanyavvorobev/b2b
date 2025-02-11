@@ -6,7 +6,7 @@ import Image from 'next/image'
 const RealCell = dynamic(() => import('@/components/UI/RealCell'))
 import refresh from '@/assets/img/refresh_dark.svg'
 
-const numberOfLevels = 5
+const numberOfLevels = 3
 
 export default function RealCells({ toggleOpen, isRegisterOpen }) {
 	const { getCells, loading } = useCells()
@@ -27,6 +27,7 @@ export default function RealCells({ toggleOpen, isRegisterOpen }) {
 	useEffect(() => {
 		fetchData()
 	}, [])
+
 
 	return (
 		<div
@@ -54,9 +55,10 @@ export default function RealCells({ toggleOpen, isRegisterOpen }) {
 					<CircularProgress />
 				) : (
 					<>
-						{data?.map((item, index) => (
-							<RealCell key={index} data={item} />
-						))}
+						{data?.map((item, index) => {
+							console.log(item, index)
+							return (<RealCell key={index} data={item} />)
+						})}
 					</>
 				)}
 			</Box>
