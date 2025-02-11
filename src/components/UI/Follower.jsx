@@ -28,15 +28,15 @@ export default function Follower({
 				backgroundRepeat: 'no-repeat',
 				backgroundPosition: 'center',
 				backgroundSize: 'contain',
-				width: isMobile ? '70px' : '134px',
-				height: isMobile ? '70px' : '141px',
+				width: isMobile ? '70px' : '163px',
+				height: isMobile ? '70px' : '171px',
 				cursor: user ? 'pointer' : 'default',
 			}}
 		>
 			<UserAvatar
 				avatarUrl={avatar}
-				width={isMobile ? 60 : 119}
-				height={isMobile ? 65 : 127}
+				width={isMobile ? 60 : 143}
+				height={isMobile ? 65 : 152}
 				style={{ position: 'relative', transform: 'translateY(3%)' }}
 			/>
 			{isReturn && (

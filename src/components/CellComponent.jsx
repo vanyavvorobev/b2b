@@ -9,17 +9,17 @@ const Fw = styled(Follower)`
 
 	&:nth-of-type(1) {
 		grid-area: a;
-		transform: translate(0, -36%);
+		transform: translate(0, -9%);
 	}
 
 	&:nth-of-type(2) {
 		grid-area: b;
-		transform: translate(-16%, -3%);
+		transform: translate(9%, -31%);
 	}
 
 	&:nth-of-type(3) {
 		grid-area: c;
-		transform: translate(16%, -3%);
+		transform: translate(-9%, -31%);
 	}
 
 	&:nth-of-type(4) {
